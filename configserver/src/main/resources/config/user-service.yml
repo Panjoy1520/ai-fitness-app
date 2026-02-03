@@ -1,0 +1,21 @@
+spring:
+  datasource:
+#    url: jdbc:postgresql://localhost:5432/ai-fitness-app
+#    username: postgres
+#    password: Pranjay@121
+    url: jdbc:postgresql://ep-soft-night-ahdsuy5c-pooler.c-3.us-east-1.aws.neon.tech/neondb
+    username: neondb_owner
+    password: npg_qwATN59hyuvK
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8081
